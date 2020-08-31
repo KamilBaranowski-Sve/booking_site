@@ -242,12 +242,6 @@ function canvasPrint() {
 
 // PAGE NAME DETECTION
 function pageDetect() {
-    let URLpathname = window.location.pathname;
-    if (URLpathname.endsWith("employees.html") || URLpathname.endsWith("ourfleet.html"))
-        photoGallery();
-    else if (URLpathname.endsWith("contact.html"))
-        detectBrowser();
-    else if (URLpathname.endsWith("booking.html"))
         canvasPrint();
 }
 
