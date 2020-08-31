@@ -4,7 +4,7 @@
 function canvasPrint() {
     // Controlling which window opened
     let URLpathname = window.location.pathname;
-    if (!(URLpathname.endsWith("booking.html"))) {
+    if (!(URLpathname.endsWith("index.html"))) {
         return;
     }
 
