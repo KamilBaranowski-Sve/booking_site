@@ -1,0 +1,205 @@
+/*
+Kamil Baranowski
+kamilb.sve@gmail.com
+*/
+
+body {
+    background-image: url("../img/background.jpg");
+    background-color: lightgray;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.thumbnail img:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#main_section {
+    width: 960px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    margin-bottom: 0;
+}
+
+#airplane {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0;
+}
+
+#logotypeimg {
+    width: auto;
+    height: 150px;
+    margin-bottom: 0;
+    background-color: lightgray;
+    float: left;
+}
+
+#logotype {
+    width: 810px;
+    height: 150px;
+    background-color: #eae2b7;
+    margin-bottom: 0;
+    float: left;
+}
+
+.textcenter {
+    height: 35px;
+    margin-top: 60px;
+}
+
+.menu {
+    width: 100%;
+    padding: 0;
+    background-color: #fcbf49;
+    text-align: center;
+    border-top: 1px solid #651b1b;
+    border-bottom: 1px solid #651b1b;
+    float: left;
+    margin: 0;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 22px;
+    height: 40px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+ol > li {
+    float: left;
+    width: 239px;
+    height: 45px;
+    border-right: 1px solid black;
+}
+
+ol > li:last-child {
+    border-right: none;
+}
+
+ol > li:hover {
+    background-color: #cf6969;
+}
+
+#content {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eae2b7;
+    clear: both;
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+
+#border_out {
+    width: 960px;
+    background-color: #eae2b7;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#border {
+    border-bottom: #fcbf49 dotted 7px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer1 {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fcbf49;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border-top: black solid 1px;
+    clear: both;
+}
+
+#contact {
+    background-color: green;
+    width: 400px;
+    padding: 10px 10px 10px 20px;
+    font-size: 100%;
+}
+
+/* BOOKING SITE */
+
+/* <article> booking content */
+#booking{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* <section> with form for booking */
+#booking_form{
+    background-color: #eae2b7;
+    width: 480px;
+    height: 400px;
+    float: left;
+}
+
+#form{
+    margin-top: 50px;
+    width: 450px;
+    line-height: 1.9;
+}
+
+#form label{
+    float: right;
+    margin-right: 40px;
+}
+
+#submit{
+    float: left;
+    margin-left: 250px;
+    margin-right: 5px;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+#clear_the_form{
+    float: left;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* <canvas> with seating plan */
+#booking_seats{
+    background-color: lightgray;
+    float: left;
+    /*border: 2px solid black;*/
+    background-color: #eae2b7
+}
+
+@media print {
+    img {
+        display: none;
+    }
+}

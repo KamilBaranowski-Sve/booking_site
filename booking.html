@@ -1,0 +1,86 @@
+<!--
+Kamil Baranowski
+kamilb.sve@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fly Today</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<!-- Header Section -->
+<header id="main_section">
+    <div id="logotypeimg">
+        <img id="airplane" src="img/airplane.png" alt="Airplane">
+    </div>
+    <article id="logotype">
+        <div class="textcenter">
+            <h1>DEMONSTRATION OF BOOKING SITE</h1>
+        </div>
+    </article>
+    <nav class="menu">
+        <ol>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Our fleet</a></li>
+            <li><a href="#">Contact</a></li>
+        </ol>
+    </nav>
+</header>
+
+<!-- Main Section -->
+<main>
+    <article id="content">
+        <h1>Booking</h1>
+        <p>
+            Website is an overview of HTML, CSS but mostly JavaScript skills. JavaScript is used here to control
+            logic of this demonstrational website. Canvas element is controlling of user's input, where
+            position of the cursor's is tracked by the website. User can click on seats, and fill the form.
+            When the form is submitted, seat will be booked and not available for the other users. This website is also
+            controlling, if every field of the form was filled. Refreshing and changing the website, does not affect saved data.
+            Links in the navigation bar are only for visual purposes.
+        </p>
+    </article>
+
+    <div id="border_out">
+        <div id="border"></div>
+    </div>
+
+    <article id="booking">
+        <section id="booking_form">
+            <form id="form" action="js/main.js">
+                <label> Name <input type="text" name="first_name" id="first_name_form" required></label><br>
+                <label> Surname <input type="text" name="surname" id="second_name_form" required></label><br>
+                <label> ID number <input type="text" name="ID_number" id="ID_number_form" required></label><br>
+                <label> Travel class <input type="text" name="travel_class" id="travel_class_form" disabled value="" required></label><br>
+                <label> Seat number <input type="text" name="seat_number" id="seat_number_form" disabled value="" required></label><br>
+                <button type="button" id="submit">Submit</button>
+                <input type="reset" value="Clear the form" id="clear_the_form">
+            </form>
+        </section>
+
+        <canvas id="booking_seats" width=480 height=400></canvas>
+    </article>
+
+</main>
+
+<!-- Footer Section -->
+<footer id="footer1">
+    Fly Today - the best airlines of 2020 according to Fly Magazine. &copy; All rights reserved.
+</footer>
+
+</body>
+</html>
