@@ -2,12 +2,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // BOOKING SITE
 function canvasPrint() {
-    // Controlling which window opened
-    let URLpathname = window.location.pathname;
-    if (!(URLpathname.endsWith("index.html"))) {
-        return;
-    }
-
     // VARIABLES
     let canvas = document.getElementById("booking_seats");
     let ctx = canvas.getContext("2d");
